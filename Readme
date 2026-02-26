@@ -1,0 +1,50 @@
+SISTEMA EXPERTO - TEMA: SEGURIDAD INFORMATICA 
+
+DESCRIPCIÓN
+
+Este proyecto consiste en un sistema experto desarrollado en Python utilizando la librería CLIPS.
+
+El sistema evalúa el nivel de seguridad de un equipo informático según cuatro factores:
+
+-Estado del firewall
+
+-Estado del antivirus
+
+-Tipo de contraseña
+
+-Uso de red pública
+
+Dependiendo de las condiciones ingresadas por el usuario, el sistema genera un diagnóstico como:
+
+-Sistema seguro
+
+-Riesgo medio
+
+-Riesgo alto
+
+-Vulnerabilidad crítica
+
+
+Ademas dice el por que sale x diagnostico
+
+¿CÓMO FUNCIONA?
+
+-El sistema está basado en reglas del tipo condición-acción (IF-THEN).
+
+-El usuario ingresa los datos del equipo.
+
+-Estos datos se convierten en hechos dentro del entorno CLIPS.
+
+-El motor de inferencia evalúa qué reglas se cumplen.
+
+-Se imprime el diagnóstico correspondiente.
+
+
+CARACTERISTICAS IMPORTANTES
+
+-Se implementan 11 reglas.
+
+-Se usa salience en la regla final para que tenga menor prioridad.
+
+-Se valida la entrada del usuario para evitar valores inválidos.
+
